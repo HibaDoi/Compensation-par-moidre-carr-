@@ -1,7 +1,7 @@
 from math import *
 from statistics import mean
 import numpy as np
-np.set_printoptions(precision=5, suppress=False)
+np.set_printoptions(precision=5, suppress=True)
 nu=6
 ROcc=636619.7724
 def cotangr(x):
@@ -201,6 +201,12 @@ Xc=X+N_1*C_T*(D_1)*(-Wc+C*N_1*N_W)
 Kc=-M_1*(A*Xc+W)
 Vc=P_1*B_T*Kc
 sima0ces=(V_T*P*V)/8
+
+Cp=[]
+for i in range(2):
+    Cp.append([-singr(Gt_ln[i][0]),
+              -cosgr(Gt_ln[i][0])])
+
     
     
 

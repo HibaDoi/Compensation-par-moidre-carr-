@@ -1,7 +1,7 @@
 from math import *
 from statistics import mean
 import numpy as np
-np.set_printoptions(precision=4, suppress=True)
+np.set_printoptions(precision=8, suppress=False)
 nu=5
 ROcc=636619.7724
 def cotangr(x):

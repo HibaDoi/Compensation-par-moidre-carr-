@@ -27,6 +27,7 @@ P=sigma0*np.linalg.inv(CL)
 
 S0=np.matrix([[31311]])
 L=[[99.7],[100.5],[100.1],[99.5],[141.5],[140.9],[141.4],[141.2],[31311],[31437],[31360],[31442]]
+B=-np.identity(12)
 I3=np.identity(12)
 P_1=np.linalg.inv(P)
 B_T=B
@@ -51,6 +52,7 @@ Qv=P_1*B_T*Qk*B*P_1
 Cv=sigma0es*Qv
 #Ql=P_1-Qv
 Cl=CL-Cv
+
 
 
 
